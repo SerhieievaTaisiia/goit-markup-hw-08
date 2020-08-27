@@ -1,0 +1,89 @@
+.section-team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  color: $primary-text-color;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-style: normal;
+  @include fonts(700, 36px, 1.2);
+  /*font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;*/
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  @extend %feature_team_title-text-color;
+  display: flex;
+}
+
+.team-list-items {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.title-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: center;
+  font-style: normal;
+  @include fonts(500, 16px, 1.2);
+  /*font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;*/
+  letter-spacing: 0.03em;
+}
+.titel-item-position {
+  color: $title-text-color;
+  margin-bottom: 16px;
+  margin-top: 0;
+  text-align: center;
+  font-style: normal;
+  @include fonts(400, 16px, 1.2);
+  /*font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;*/
+  letter-spacing: 0.03em;
+}
+.titel-item-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.item-link {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.item-link-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    .instagram-icon {
+      fill: $primary-bg-color;
+    }
+  }
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
