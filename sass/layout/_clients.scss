@@ -1,13 +1,16 @@
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /*padding-top: 94px;
+  padding-bottom: 94px;*/
 }
 .section-title {
   color: $primary-text-color;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  /*margin-bottom: 50px;*/
   font-style: normal;
-  @include fonts(700, 36px, 1.2);
+  @include fonts(700, 28px, 1.17);
   /*font-weight: 700;
   font-size: 36px;
   line-height: 1.2;*/
@@ -16,16 +19,25 @@
 }
 .clients-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  /*justify-content: center;*/
 }
 .clients-list-item {
-  &:not(:last-child) {
+  /*&:not(:last-child) {
     margin-right: 30px;
+  }*/
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  &:nth-last-child(n + 3) {
+    margin-bottom: 30px;
   }
 }
 
 .clients-list-item-link {
-  width: 170px;
+  /*width: 170px;*/
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   display: flex;

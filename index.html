@@ -15,42 +15,61 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
-      <a href="./index.html" class="logo"><span>Web</span> Studio</a>
-      <nav class="conteiner main-nav">
-        <ul class="site-nav">
-          <li class="item navigation">
-            <a class="site-nav-link" href="">Студия</a>
-          </li>
-          <li class="item">
-            <a class="site-nav-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="item"><a class="site-nav-link" href="">Контакты</a></li>
-        </ul>
+    <header class="container page-header">
+      <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+      <button
+        type="button"
+        class="menu-button is-open" data-menu-button
+        aria-expanded="false"
+        aria-controls="menu-wraper"
+      >
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use
+            class="icon-burger"
+            href="./img/sprite-burger-close.svg#icon-menu_40px-1"
+          ></use>
+          <use
+            class="icon-close"
+            href="./img/sprite-burger-close.svg#icon-close_40px-1"
+          ></use>
+        </svg>
+      </button>
+      <div class="menu-wraper is-open" data-menu>
+        <nav class="main-nav">
+          <ul class="site-nav">
+            <li class="item navigation">
+              <a class="site-nav-link" href="">Студия</a>
+            </li>
+            <li class="item">
+              <a class="site-nav-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="site-nav-link" href="">Контакты</a></li>
+          </ul>
 
-        <ul class="contacts">
-          <li class="contacts-item">
-            <a class="contacts-link" href="">
-              <svg class="envelope-icon">
-                <use href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="">
-              <svg class="smartphone-icon">
-                <use href="./img/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +380961111111</a
-            >
-          </li>
-        </ul>
-      </nav>
+          <ul class="contacts">
+            <li class="contacts-item">
+              <a class="contacts-link" href="">
+                <svg class="envelope-icon">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="">
+                <svg class="smartphone-icon">
+                  <use href="./img/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +380961111111</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <div class="conteiner">
+        <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -62,7 +81,7 @@
       </section>
 
       <section class="section">
-        <div class="conteiner">
+        <div class="container">
           <ul class="features-list">
             <li class="feature-list-item">
               <div class="icon">
@@ -206,7 +225,7 @@
       </section>
 
       <section class="section-works">
-        <div class="conteiner">
+        <div class="container">
           <h3 class="section-title">Чем мы занимаемся</h3>
           <ul class="works-list">
             <li class="works-list-items">
@@ -239,11 +258,11 @@
         </div>
       </section>
       <section class="section-team">
-        <div class="conteiner">
+        <div class="container">
           <h4 class="section-title">Наша команда</h4>
           <ul class="team-list">
             <li class="team-list-items">
-              <img src="./img/николайКучеренко.jpg" alt="" width="270" />
+              <img src="./img/николайКучеренко.jpg" alt="Николай Кучеренко"  />
               <h5 class="title-name">Николай Кучеренко</h5>
               <p class="titel-item-position">Product Designer</p>
               <ul class="titel-item-link">
@@ -278,7 +297,7 @@
               </ul>
             </li>
             <li class="team-list-items">
-              <img src="./img/ольгаИванова.jpg" alt="" width="270" />
+              <img src="./img/ольгаИванова.jpg" alt="" width="450" />
               <h5 class="title-name">Ольга Иванова</h5>
               <p class="titel-item-position">Frontend Developer</p>
               <ul class="titel-item-link">
@@ -386,7 +405,7 @@
         </div>
       </section>
       <section class="section-clients">
-        <div class="conteiner">
+        <div class="container">
           <h6 class="section-title">Постоянные клиенты</h6>
           <ul class="clients-list">
             <li class="clients-list-item">
@@ -435,7 +454,7 @@
       </section>
     </main>
     <footer class="footer-menu">
-      <div class="conteiner">
+      <div class="container">
         <div class="class">
           <div class="address">
             <a href="./index.html" class="logo-footer"
@@ -454,7 +473,7 @@
               </li>
               <li class="address-list-link">
                 <address>
-                  <a href="mailto:info@example.com">info@example.com</a>
+                  <a  href="mailto:info@example.com">info@example.com</a>
                 </address>
               </li>
               <li class="address-list-link">
@@ -514,5 +533,9 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>-->
+    </main>
   </body>
 </html>

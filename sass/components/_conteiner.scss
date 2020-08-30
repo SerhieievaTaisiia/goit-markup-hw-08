@@ -1,8 +1,32 @@
-.conteiner {
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+}
+
+/*.container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  /*outline: 2px solid tomato;*/
-}
+  outline: 2px solid tomato;*/
