@@ -7,17 +7,50 @@
 
 .features-list {
   @extend %feature_team_title-text-color;
-
   /*display: flex;*/
-}
-@media screen and (min-width: 768px) {
-  width: 768px;
-  display: flex;
-  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .title {
+      text-align: left;
+    }
+    .icon {
+      width: 325px;
+    }
+  }
 }
 .feature-list-item {
-  &:not(:last-child) {
+  /*&:not(:last-child) {
     margin-right: 30px;
+  }*/
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .feature-list-item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+  .features-list {
+    display: flex;
+  }
+  .feature-list-item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .icon {

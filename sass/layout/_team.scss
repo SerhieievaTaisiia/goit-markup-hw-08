@@ -21,14 +21,16 @@
 .team-list {
   @extend %feature_team_title-text-color;
   /*display: flex;*/
-}
-@media screen and (min-width: 767px) {
-  display: flex;
-  flex-wrap: wrap;
-  .team-list-items:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-basis: 50%;
   }
 }
+/*.team-list-items:not(:last-child) {
+  margin-right: 30px;
+}*/
 .team-list-items {
   width: 450px;
 
@@ -36,11 +38,29 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  /*&:not(:last-child) {
+  /* &:not(:last-child) {
     margin-right: 30px;
-  }*/
+  }
   &:not(:last-child) {
     margin-bottom: 30px;
+  }*/
+
+  @media screen and (min-width: 768px) {
+    width: 325px;
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .team-list-items {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 .title-name {

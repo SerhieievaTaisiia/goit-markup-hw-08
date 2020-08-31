@@ -26,6 +26,33 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    display: flex;
+    margin-left: 115px;
+  }
+  .address-list {
+    margin-right: 290px;
+    margin-bottom: 60px;
+  }
+  .call-list {
+    position: absolute;
+    top: 65px;
+    right: 89px;
+  }
+  .footer-menu {
+    position: relative;
+  }
+  .form-call {
+    text-align: center;
+  }
+  .footer-input {
+    margin-left: 166px;
+  }
+  .button-secondary {
+    margin-left: 291px;
+  }
+}
 .address-list {
   a {
     @include fonts(400, 14px, 1.7);
@@ -159,7 +186,7 @@
   padding-bottom: 10px;
   padding-right: 62px;
   padding-left: 29px;
-  margin-left: 115px;
+  /*margin-left: 115px;
   /*margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
@@ -169,5 +196,10 @@
     width: 24px;
     height: 24px;
     background-size: contain;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-secondary {
+    margin-left: 115px;
   }
 }
